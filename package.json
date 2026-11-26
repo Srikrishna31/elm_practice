@@ -1,0 +1,14 @@
+{
+  "name": "elm-practice-sandbox",
+  "private": true,
+  "scripts": {
+    "build": "elm make src/Main.elm --output=public/elm.js",
+    "build:optimized": "elm make src/Main.elm --optimize --output=public/elm.js",
+    "serve": "http-server public -c-1 -p 8000",
+    "start": "npm run build && npm run serve"
+  },
+  "devDependencies": {
+    "elm": "0.19.1-6",
+    "http-server": "14.1.1"
+  }
+}
